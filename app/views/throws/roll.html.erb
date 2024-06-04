@@ -1,6 +1,6 @@
-<h1>roll header</h1>
-<%=@how_many_sides%>
-<%=@number_of_dice%>
-<%@rolls.each do |roll|%>
-  <p><%=roll%></p>
-<%end%>
+<h1><%=@number_of_dice%>d<%=@how_many_sides%></h1>
+<ul>
+  <%@rolls.each do |roll|%>
+    <li><%=roll%></li>
+  <%end%>
+</ul>
